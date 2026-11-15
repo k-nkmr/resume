@@ -1,0 +1,18 @@
+{
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": {
+      "sentence-length": {
+        "max": 120
+      },
+      "max-kanji-continuous-len": {
+        "max": 8,
+        "allow": [
+          "職務経歴書",
+          "情報公開"
+        ]
+      },
+      "ja-no-mixed-period": false
+    }
+  }
+}

@@ -1,0 +1,29 @@
+name: Resume Update Reminder
+
+on:
+  schedule:
+    - cron: "17 9 1 1,4,7,10 *"
+      timezone: "Asia/Tokyo"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  create-issue:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create reminder issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          open_count="$(gh issue list --state open --search '職務経歴書を棚卸しする in:title' --json number --jq 'length')"
+          if [ "$open_count" -gt 0 ]; then
+            echo "未完了の棚卸し Issue があるため、新規作成をスキップします。"
+            exit 0
+          fi
+          gh issue create \
+            --title "職務経歴書を棚卸しする ($(date -u +%Y-%m))" \
+            --body $'定期的な更新リマインダーです。\n\n- [ ] 新しい成果・役割・技術を追記する\n- [ ] 数値とリンクの根拠を確認する\n- [ ] 古くなった説明を整理する\n- [ ] 公開してよい情報だけか確認する\n- [ ] 最終更新日を変更する\n- [ ] PDFと公開ページを確認する'

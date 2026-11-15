@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="{{ site.lang | default: 'ja-JP' }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <title>{{ page.title }} | {{ site.title | default: site.name }}</title>
+    <script>
+      (() => {
+        const saved = localStorage.getItem("resume-theme");
+        const dark = saved ? saved === "dark" : matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = dark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  </head>
+  <body>
+    <button class="theme-toggle" type="button" aria-label="表示テーマを切り替える"></button>
+    <main class="resume-shell">{{ content }}</main>
+    <script src="{{ '/assets/js/theme.js' | relative_url }}"></script>
+  </body>
+</html>

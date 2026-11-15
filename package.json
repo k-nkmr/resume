@@ -1,0 +1,17 @@
+{
+  "name": "resume",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "lint": "textlint index.md README.md",
+    "lint:fix": "textlint --fix index.md README.md",
+    "build:pdf": "md-to-pdf index.md --config-file pdf-config.cjs",
+    "preview": "node scripts/preview-server.cjs",
+    "check": "npm run lint"
+  },
+  "devDependencies": {
+    "md-to-pdf": "5.2.5",
+    "textlint": "15.8.0",
+    "textlint-rule-preset-ja-technical-writing": "12.0.2"
+  }
+}
