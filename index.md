@@ -6,7 +6,7 @@ description: ソフトウェアエンジニアの職務経歴書
 
 # 職務経歴書
 
-最終更新: 2026年11月15日
+最終更新: 2026年11月16日
 
 ## 基本情報
 
@@ -39,11 +39,12 @@ description: ソフトウェアエンジニアの職務経歴書
 | 言語 | Dart、C#、TypeScript、Java、SQL | Flutterアプリ、Windowsアプリ、Cloud Functions、業務システムの開発で使用 |
 | モバイル | Flutter、Riverpod、Flutter Hooks、go_router、auto_route、Dio、Retrofit | iOS・Androidアプリの新規開発、機能追加、運用保守、ネイティブアプリからの移行を経験 |
 | UI実装・デザイン連携 | Figma | デザイン、コンポーネント、画面遷移を確認し、Flutterでの画面実装と端末サイズに応じた表示調整に利用 |
-| Windowsアプリ | .NET Framework 4.8、Windows Forms、Visual Studio | macOS上のVMwareでWindows開発環境を構築し、既存アプリの改修・動作確認・納品に対応 |
+| 端末連携 | NFC（FeliCa／NFC-F）、ICカードリーダー連携 | NFC対応Androidアプリの画面設計・実装、NFC権限・カード検出設定、WindowsアプリでのICカードリーダー連携を経験 |
+| Windowsアプリ | .NET Framework 4.8、Windows Forms | macOS上のVMwareでWindows開発環境を構築し、既存アプリの改修・動作確認・納品に対応 |
 | 設計 | レイヤードアーキテクチャ、オニオンアーキテクチャ、Repositoryパターン | プロジェクトの設計方針に沿い、UI・状態・業務処理・外部接続の責務を分離して実装 |
 | Firebase・クラウド | Firebase Authentication、Firestore、Cloud Functions、Cloud Storage、Cloud Messaging、Crashlytics、Performance | 認証、通知、データ保存、ファイルアップロード、障害調査などに利用 |
 | データ・バックエンド | REST API、Cloud Functions、Firestore | APIクライアントの実装と、Cloud Functionsの小規模な機能追加・テストを経験 |
-| 開発・品質管理 | GitHub、GitHub Actions、FVM、Melos、Fastlane、Widgetbook | プルリクエストによる開発、CI、単体テスト、ゴールデンテスト、ストアリリースに対応 |
+| 開発・品質管理 | GitHub、GitHub Actions、FVM、Melos | プルリクエストによる開発、CI、単体テスト、ゴールデンテスト、ストアリリースに対応 |
 | コミュニケーション | Slack | 顧客・チームメンバーとの仕様確認、進捗共有、開発上の相談に利用 |
 | AI開発支援 | Codex、Claude Code | 仕様資料の要点・関連性・確認順序の整理、設計への落とし込み、不具合調査、実装、テスト、レビュー、Issue・ドキュメント作成に活用。生成結果を確認・検証して採用 |
 
@@ -63,7 +64,7 @@ description: ソフトウェアエンジニアの職務経歴書
 
 共通の趣味を持つユーザー同士が交流できる、iOS・Android向けコミュニティアプリです。運用中アプリの新機能開発、不具合修正、保守、ストアリリースを継続して担当しています。現在は開発の主担当として、顧客との要件整理からリリースまでを一貫して推進しています。
 
-**課題・対応**
+**担当業務**
 
 - 顧客から共有される機能案は詳細が固まっていないことが多いため、目的と利用フローを確認して仕様を具体化し、優先順位を整理してIssueへ分解
 - 開発リードとして実装方針を決め、自身も設計・実装・テストを担当。コードレビュー、進捗調整、リリースまでを一貫して推進
@@ -89,7 +90,7 @@ description: ソフトウェアエンジニアの職務経歴書
 
 個人間でEVを貸し借りするカーシェアリングサービスの新規機能開発・継続改善です。既存のプロジェクト構成をもとに、複雑な取引フローを持つFlutterアプリの開発を単独で担当しました。
 
-**課題・対応**
+**担当業務**
 
 - 大量の仕様資料と複雑な取引ルールを短期間で理解する必要があったため、AIを活用して要点、資料間の関連性、確認順序を整理し、原文と照合しながらFlutter設計書へ落とし込み
 - 複数の利用者と状態遷移が関わる取引フローを破綻なく扱うため、画面遷移、状態、データ構造を整理して設計
@@ -101,7 +102,7 @@ description: ソフトウェアエンジニアの職務経歴書
 
 **使用技術**
 
-Flutter、Dart、Riverpod、REST API、Firebase、Firestore、GitHub
+Flutter、Dart、Riverpod、REST API、Firestore
 
 <hr class="project-separator">
 
@@ -113,7 +114,7 @@ Flutter、Dart、Riverpod、REST API、Firebase、Firestore、GitHub
 
 業務用Windows端末で利用するポイント管理アプリの年度更新・機能改修です。既存のC#・Windows Formsアプリを読み解き、API連携と端末表示を中心に改修しました。
 
-**課題・対応**
+**担当業務**
 
 - 特定の画面サイズを前提とした固定配置が、端末によって画像やボタンがずれて操作できない原因だと特定。表示領域に応じて画面を調整する共通処理を実装
 - 運用変更に対応するため、ポイント管理処理をローカルDBからREST APIへ移行し、既存処理と不要な依存を整理
@@ -124,7 +125,7 @@ Flutter、Dart、Riverpod、REST API、Firebase、Firestore、GitHub
 
 **使用技術**
 
-C#、.NET Framework 4.8、Windows Forms、REST API、System.Net.Http、ICカードリーダー連携、Visual Studio、Windows、VMware、GitHub
+C#、.NET Framework 4.8、Windows Forms、REST API、ICカードリーダー連携
 
 <hr class="project-separator">
 
@@ -136,10 +137,10 @@ C#、.NET Framework 4.8、Windows Forms、REST API、System.Net.Http、ICカー�
 
 スタッフがイベント情報、勤務予定、通知、プロフィールなどを確認・管理するiOS・Androidアプリの新規開発です。
 
-**課題・対応**
+**担当業務**
 
 - 複数の入力状態を持つ業務フローを整理し、デザインシステムに沿って主要画面を実装
-- 端末サイズによる表示崩れや意図しないUI差分を防ぐため、Widgetbook、ゴールデンテスト、CIを利用して継続的に検証
+- 端末サイズによる表示崩れや意図しないUI差分を防ぐため、ゴールデンテスト、CIを利用して継続的に検証
 
 **成果**
 
@@ -147,7 +148,36 @@ C#、.NET Framework 4.8、Windows Forms、REST API、System.Net.Http、ICカー�
 
 **使用技術**
 
-Flutter、Dart、Riverpod、Flutter Hooks、go_router、Dio、Retrofit、Firebase Messaging、Crashlytics、Widgetbook、GitHub Actions
+- Flutter、Dart、Riverpod、Flutter Hooks、go_router、Dio、Retrofit
+- Firebase Cloud Messaging、Crashlytics、GitHub Actions
+
+<hr class="project-separator">
+
+#### ICカード読取・ポイント管理アプリ（2026年5月〜2026年8月）
+
+**役割:** Flutterエンジニア（アプリ開発を単独で担当）
+
+**案件概要**
+
+地域活動への参加に応じてポイントを付与する、Android向け業務アプリの新規開発です。端末のNFC機能でICカードを読み取り、カード番号をもとにポイント付与・履歴確認・減算を行います。提供された画面遷移の概要をもとに、UI設計からアプリ実装、既存APIとの連携までを単独で担当しました。
+
+**担当業務**
+
+- 提供された事業概要・画面遷移資料から、ポイント付与・履歴確認・減算の業務フロー、API連携方針、確認事項を整理して実装計画を作成
+- デザイン支給がない中、画面遷移の概要から操作フローとUIを設計し、企画選択、カード読取、履歴、減算確認、処理結果、共通エラーの各画面と画面遷移を実装
+- 高齢の利用者が多いことを踏まえ、視認性の高い配色を調査して採用し、文字を大きく表示。付与と減算の操作を区別する警告色や確認画面を設け、操作ミスを防ぐUIを設計
+- 画面表示に加え、振動と音でも操作への反応を知らせる設計とし、利用者が操作結果に気づきやすいよう配慮
+- ポイント付与・履歴確認・減算の処理を既存APIと連携し、アプリ側の実装を担当
+- NFC連携に向け、AndroidのNFC権限とFeliCa（NFC-F）カードの検出設定を整備
+
+**成果**
+
+- 画面遷移の概要からUI設計を具体化し、ポイント付与・履歴確認・減算の一連の機能を、既存APIとの連携を含めて単独で実装
+- 高齢の利用者を想定し、見やすい配色・大きな文字・誤操作を防ぐ確認画面と、振動・音によるフィードバックを取り入れたUIを構築
+
+**使用技術**
+
+Flutter、Dart、NFC（FeliCa／NFC-F）
 
 <hr class="project-separator">
 
@@ -159,7 +189,7 @@ Flutter、Dart、Riverpod、Flutter Hooks、go_router、Dio、Retrofit、Firebas
 
 美容師に特化したiOS・Android向けマッチングアプリの新規開発です。開発初期に参画し、先行して開発していたエンジニアと分担しながら、課金・本人確認を中心とした機能実装と、リリース準備の一部を担当しました。
 
-**課題・対応**
+**担当業務**
 
 - デザイン支給のない担当画面について、既存画面との統一感と操作の分かりやすさを判断基準として、UI設計から実装までを担当
 - 課金基盤と外部本人確認サービスの仕様を確認し、複数の状態・条件分岐を持つ機能を実装
@@ -171,7 +201,8 @@ Flutter、Dart、Riverpod、Flutter Hooks、go_router、Dio、Retrofit、Firebas
 
 **使用技術**
 
-Flutter、Dart、Riverpod、Firebase、Cloud Functions、Cloud Storage、RevenueCat、Fastlane、GitHub Actions
+- Flutter、Dart、Riverpod、Cloud Functions、Cloud Storage、RevenueCat
+- GitHub Actions
 
 <hr class="project-separator">
 
@@ -183,7 +214,7 @@ Flutter、Dart、Riverpod、Firebase、Cloud Functions、Cloud Storage、Revenue
 
 IoTデバイスと連携する既存モバイルアプリのリニューアル開発です。将来的にデザイナーも画面を変更できる構成を目指し、FlutterFlowを利用して画面を再構築しました。
 
-**課題・対応**
+**担当業務**
 
 - 既存アプリの仕様と画面構成を読み解き、FlutterFlow上で画面を再構築
 - 将来デザイナーが画面を変更する方針に合わせ、保守性を優先して独自実装を増やさず、可能な限りFlutterFlowの標準コンポーネントを組み合わせて実装
@@ -202,7 +233,7 @@ FlutterFlow、Flutter
 
 位置情報を利用して駅へチェックインし、アイテム収集などを楽しむゲームアプリです。Flutterで開発中のプロジェクトへ参画し、iOS・Android向けの機能開発を担当しました。
 
-**課題・対応**
+**担当業務**
 
 - REST API v1とv2が併存する段階的な移行に対応するため、APIクライアントを整理し、認証、トークン管理、リトライ、エラー処理と関連テストを実装
 - 複数の状態を持つゲーム機能について、画面、状態管理、APIレスポンスの反映までを一貫して実装
